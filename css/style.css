@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: #FAFAFA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+}
+.contenido .titulo{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.contenido .titulo h1{
+    margin-bottom: 20px;
+}
+.contenido .titulo span, .contenido .titulo p, .contenido .cards .card p{
+    color: #9fa6ad;
+    font-weight: lighter;
+}
+.contenido .cards{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: .8fr .8fr .8fr;
+    align-items: center;
+    gap: 40px;
+}
+.contenido .cards .card .iconos{
+    text-align: end;
+}
+.contenido .cards .card{
+    box-shadow: 0px 11px 41px -8px rgba(0,0,0,0.25);
+    padding: 30px;
+    border-radius: 15px;
+}
+.contenido .cards .card p{
+    margin: 10px 0 30px 0;
+}
+.contenido .cards .Supervisor{
+    border-top: 5px solid #45d3d3;
+}
+.contenido .cards .Calculator{
+    border-top: 5px solid #549ef2;
+}
+.contenido .cards .Team{
+    border-top: 5px solid #ea5353;
+    margin-bottom: 40px;
+}
+.contenido .cards .Karma{
+    border-top: 5px solid #fcaf4a;
+}
+@media (max-width: 900px){
+    .contenido .titulo{
+        width: 80%;
+        margin: 0 auto 50px auto;
+    }
+    .contenido .cards{
+        width: 90%;
+        grid-template-columns: .85fr;
+        justify-content: center;
+    }
+    .contenido .titulo p br{
+        display: none;
+    }
+}
+@media (max-width: 480px){
+    .contenido .cards{
+        width: 95%;
+    }
+}
